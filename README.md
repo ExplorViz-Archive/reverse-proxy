@@ -1,6 +1,8 @@
 # ExplorViz Reverse Proxy
 
-Automated docker build for the ExplorViz reverse proxy. This image is for MacOS based hosts.
+[![Dockerhub Pulls](https://img.shields.io/docker/pulls/explorviz/reverse-proxy.svg)](https://hub.docker.com/r/explorviz/reverse-proxy)
+
+Automated docker build for the ExplorViz reverse proxy.
 
 # Linux
 Run with `docker run -d --name explorviz-reverse-proxy -p 8080:8080 explorviz/reverse-proxy`.
