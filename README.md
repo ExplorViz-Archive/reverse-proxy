@@ -10,11 +10,12 @@ Run with `docker run -d --name explorviz-reverse-proxy -p 8080:8080 explorviz/re
 
 For local development with Eclipse (fixed port 8080), run with: Run with `docker run -d --network host --name explorviz-reverse-proxy explorviz/reverse-proxy`.
 
-## macOS / Windows Version 18.06.1-ce-win73 (or newer)
+## macOS / Windows Version 
 
+### macOS / Windows: Docker Version 18.06.1-ce-win73 (or newer)
 For local development with Eclipse, run with: `docker run -d --name explorviz-reverse-proxy -p 8080:8080 explorviz/reverse-proxy:macos`.
 
-## Windows Version 18.06.1-ce-win73 (or older)
+### Windows: Docker Version 18.06.1-ce-win73 (or older)
 
 For local development with Eclipse, run with `docker run -d --name explorviz-reverse-proxy -p 8080:8080 explorviz/reverse-proxy`.
 
