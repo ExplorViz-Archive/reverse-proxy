@@ -1,0 +1,19 @@
+services:
+  - docker
+
+jobs:
+  fast_finish: true
+  include:
+    
+    - stage: deploy
+      name: "Docker Images"
+      if: (type = push) AND ((branch = dev-1) OR (branch = master))
+      script: .travis/docker_push.sh
+    
+before_script:
+  - chmod +x .travis/docker_push.sh
+  
+branches:
+  only:
+  - master
+  - dev-1
