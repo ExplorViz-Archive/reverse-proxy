@@ -18,12 +18,12 @@ if [[ "$TRAVIS_BRANCH" == 'dev-1' ]]; then
 elif [[ "$TRAVIS_BRANCH" == 'master' ]]; then
 
   docker build -t reverse-proxy .
-  docker tag reverse-proxy explorviz/reverse-proxy:dev-$TRAVIS_COMMIT
-  docker tag reverse-proxy explorviz/reverse-proxy:dev
+  docker tag reverse-proxy explorviz/reverse-proxy:$TRAVIS_COMMIT
+  docker tag reverse-proxy explorviz/reverse-proxy
 
   docker build -t reverse-proxy -f Dockerfile_macos .
-  docker tag reverse-proxy explorviz/reverse-proxy:macos-dev-$TRAVIS_COMMIT
-  docker tag reverse-proxy explorviz/reverse-proxy:macos-dev
+  docker tag reverse-proxy explorviz/reverse-proxy:macos-$TRAVIS_COMMIT
+  docker tag reverse-proxy explorviz/reverse-proxy:macos
   
   docker push explorviz/reverse-proxy
 
